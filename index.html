@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1
+        {
+            width: 200px;
+            height: 200px;
+            background-image: repeating-linear-gradient(yellow 0px,red 100px);
+            background-image: radial-gradient(100px 100px at 100px 0px,red,yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <form action="http://localhost:8080/FirstWebTest/hello2" method="get">
+            用户名：<input type="text" name="username"><br/>
+            密码：<input type="password" name="password"><br/>
+            <button >提交</button>
+            <a href="/SecondShow.html">显示数据</a>
+        </form>
+    </div>
+    <script>
+        function myfunction()
+        {
+            location.href="SecondShow.html";
+        }
+
+    </script>
+</body>
+</html>
